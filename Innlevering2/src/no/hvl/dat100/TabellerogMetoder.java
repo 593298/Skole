@@ -2,6 +2,7 @@ package no.hvl.dat100;
 
 public class TabellerogMetoder {
 	
+	//a)
 	public static void skrivUt (int[] tabell) {
 		System.out.print("Tabell: ");
 		for (int i : tabell) {
@@ -9,7 +10,7 @@ public class TabellerogMetoder {
 		}
 		System.out.println();
 	}
-	
+	//b)
 	public static String tilStreng (int[] tabell) {
 		
 		System.out.print("Streng: [ ");
@@ -24,6 +25,7 @@ public class TabellerogMetoder {
 		
 		return tabTxt;
 	}
+	//c)
 	public static int summer1 (int[] tabell) {
 		int sum = 0;
 		
@@ -59,6 +61,7 @@ public class TabellerogMetoder {
 		
 		return sum;
 	}
+	//d)
 	public static boolean finnesTall (int[] tabell, int tall) {
 		boolean funnet = false;
 		int i = 0;
@@ -72,7 +75,7 @@ public class TabellerogMetoder {
 		System.out.println("Finnes Tallet: " + funnet);
 		return funnet;
 	}
-	
+	//e)
 	public static int posisjonTall (int[] tabell, int tall) {
 		// skjønte ikke "og -1 ellers" i oppgaveteksten
 		boolean funnet = false;
@@ -90,6 +93,7 @@ public class TabellerogMetoder {
 		return pos;
 		
 	}
+	//f)
 	public static int[] reverser(int[] tabell) {
 		int reverse = tabell.length-1;
 		int grense = tabell.length;
@@ -106,6 +110,7 @@ public class TabellerogMetoder {
 		return reverseTab;
 		
 	}
+	//g)
 	public static boolean erSortert (int[] tabell) {
 		boolean sortert = true;
 		int i = 1;
@@ -119,18 +124,19 @@ public class TabellerogMetoder {
 		System.out.println(sortert);
 		return sortert;
 	}
-	public static int [] settSammen(int [] tab1, int[] tab2) {
-		int[] sammen = new int[tab1.length];
+	//h)
+	public static int [] settSammen(int [] tabell1, int[] tabell2) {
+		int[] sammen = new int[tabell1.length];
 		int i = 0;
 		int j = 0;
 		
-		while (i < tab1.length) {
-			sammen[i] = sammen[i] + tab1[i];
+		while (i < tabell1.length) {
+			sammen[i] = sammen[i] + tabell1[i];
 			i++;
 		}
 		
-		while (j < tab2.length) {
-			sammen[j] = sammen[j] + tab2[j];
+		while (j < tabell2.length) {
+			sammen[j] = sammen[j] + tabell2[j];
 			j++;
 		}
 		System.out.print("Sammensatt ");
