@@ -19,7 +19,7 @@ public class TabellerogMetoder {
 		
 		for(int i : tabell) {
 			tabTxt = Integer.toString(i);
-			System.out.print(i + ", ");
+			System.out.print(tabTxt + ", ");
 		}
 		System.out.println("]");
 		
